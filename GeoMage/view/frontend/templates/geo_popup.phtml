@@ -1,0 +1,19 @@
+<?php /** @var Phoenix\GeoMage\Block\GeoPopup $block */ ?>
+<?php if ($content = $block->getContent('this-should-be-renamed')) :?>
+<div id="geo-popup" style="display:none;">
+    <?php /* @noEscape */ echo $content ?>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "geo_popup": {
+                        "component": "Phoenix_GeoMage/js/geo_popup"
+                    }
+                 }
+            }
+        }
+    }
+</script>
+<?php endif;?>

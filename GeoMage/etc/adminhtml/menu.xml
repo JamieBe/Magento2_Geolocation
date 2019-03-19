@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+        <menu>
+          <add id="Phoenix_GeoMage::phoenix" title="Phoenix GeoMage" translate="title" module="Phoenix_GeoMage" parent="Magento_Backend::stores" sortOrder="50" dependsOnModule="Phoenix_GeoMage" resource="Phoenix_GeoMage::geomage"/>
+          <add id="Phoenix_GeoMage::geomage_hellogeomage" title="Manage Geolocation" translate="title" module="Phoenix_GeoMage" parent="Phoenix_GeoMage::phoenix" sortOrder="10" dependsOnModule="Phoenix_GeoMage" action="geomage/hellogeomage" resource="Phoenix_GeoMage::geomage"/>
+        </menu>
+    </config>
+     
+  
